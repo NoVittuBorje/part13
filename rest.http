@@ -1,0 +1,84 @@
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ikpvcm1hMiIsImlkIjozLCJpYXQiOjE3NDE3NzcyNTJ9.AjPax2TIYG2dBb68q0geI8Cv3k2Bj_1iT_YzJiiu1T0
+
+{
+    "author":"Jere",
+    "url":"localhost",
+    "title":"Toimii search url1223456333445",
+    "year":1993
+}
+
+###
+DELETE http://localhost:3001/api/blogs/20
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ikt1dWxhcMOkw6QiLCJpZCI6NiwiaWF0IjoxNzQxMDgzODI2fQ.7nsnkfjxUaRRBKwBxH5x5N6nox4okxihTpNEseUTK_0
+###
+PUT http://localhost:3001/api/blogs/29
+Content-Type: application/json
+
+{
+  "likes": 5
+}
+###
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+    "username":"Jorma2",
+    "name":"Jorma2",
+    "password":"salasana"
+}
+###
+DELETE http://localhost:3001/api/users/4
+###
+POST http://localhost:3001/api/login
+content-type: application/json
+
+{
+    "username":"Jorma2",
+    "password":"salasana"
+}
+###
+DELETE  http://localhost:3001/api/logout
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ikpvcm1hMiIsImlkIjozLCJpYXQiOjE3NDE3NzcyNTJ9.AjPax2TIYG2dBb68q0geI8Cv3k2Bj_1iT_YzJiiu1T0
+###
+PUT http://localhost:3001/api/users/5
+Content-Type: application/json
+
+{
+    "username":"JereP"
+}
+###
+POST http://localhost:3001/api/readinglists
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ikpvcm1hIiwiaWQiOjEsImlhdCI6MTc0MTYwOTgyN30.kr4MySfSslNMadqWKuYS8tuIyC8GPkHAOuE6IO98-CY
+
+{
+  "blogId": 2,
+  "userId": 1
+}
+###
+PUT http://localhost:3001/api/readinglists/1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ikpvcm1hIiwiaWQiOjEsImlhdCI6MTc0MTYwOTgyN30.kr4MySfSslNMadqWKuYS8tuIyC8GPkHAOuE6IO98-CY
+
+{
+  "read":true
+}
+###
+PUT http://localhost:3001/api/readinglists/1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ikpvcm1hMiIsImlkIjozLCJpYXQiOjE3NDE2OTczNTd9.A22aGHMa8Av5CNyceeJpBcdmxsmIULzHvjBWcdvMnXU
+
+{
+  "read":true
+}
+###
+POST http://localhost:3001/api/readinglists
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ikpvcm1hMiIsImlkIjozLCJpYXQiOjE3NDE2OTczNTd9.A22aGHMa8Av5CNyceeJpBcdmxsmIULzHvjBWcdvMnXU
+
+{
+  "blogId": 2,
+  "userId": 3
+}

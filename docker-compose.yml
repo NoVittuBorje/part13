@@ -1,0 +1,14 @@
+
+services:
+  database:
+    image: postgres
+    container_name: blog-database
+    restart: always
+    ports:
+      - 5432:5432
+    volumes:
+      - ./postgresinit:/docker-entrypoint-initdb.d
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=salasana
+      - POSTGRES_DB=postgres
